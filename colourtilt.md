@@ -1,8 +1,9 @@
 # colourtilt
 
-## Step 1 setup
+## Step 1 
+Setup
 We will start by createing a variable calles "strip" click the "variable" tab
-in the blocks then make a variable call it "strip". 
+In the blocks then make a variable call it "strip". 
 Go to the "neopixal" tab and get the  "set strip" block and place it in the "on start" block.
  
 ```blocks
@@ -11,9 +12,10 @@ let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB)
 ```
 
 ## step 2
-make sure that the pin = "0" this is where we connect the wire on the microbit.
+Setup
+Make sure that the pin = "0" this is where we connect the wire on the microbit.
 Then change the number of LED's to "13" this is how many lights we have on the GlowBit.
-alos make sure the LED'd are set as "RGB" this is the tupe of light we have.
+Alos make sure the LED'd are set as "RGB" this is the type of light we have.
 
 ```blocks
 
@@ -24,7 +26,7 @@ let strip = neopixel.create(DigitalPin.P0, 13, NeoPixelMode.RGB)
 ## Step 3
 In this step we will set the brightness. LED's use a scale from 0 - 255 for brighness.
 We will go to the "more" tab
-under the "neopixal" tab and select the "setBrightness" block place it under the "set strip" block.
+Under the "neopixal" tab and select the "setBrightness" block place it under the "set strip" block.
 Change the number to 50.
 
 ```blocks 
