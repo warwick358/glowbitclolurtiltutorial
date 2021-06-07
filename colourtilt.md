@@ -112,4 +112,5 @@ basic.forever(function () {
     red = Math.constrain(Math.map(input.acceleration(Dimension.X), -1023, 1023, 0, 255), 0, 255)
     strip.showColor(neopixel.rgb(red, 0, blue))
 })
+
 ```
