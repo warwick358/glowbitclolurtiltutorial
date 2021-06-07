@@ -34,7 +34,7 @@ strip.setBrightness(50)
 
 ## step 4
 We will now start the forever loop and tell the microbit what to do to the LED's when we tild it.
-Go the the "variable" tab and make 2 new variables. 1."red" 2."blue".
+Go the the "variable" tab and make 2 new variables. 1."blue" 2."red".
 In the "variable" tab get the "set strip to 0" block and place it in the "forever" block.
 Change the variable to "red". then place another and change it to "blue".
 ```block
@@ -55,11 +55,10 @@ basic.forever(function () {
 })
 ```
 ## step 6
-next we go to the "math" tab again and look for the "map 0 form low 0 high 1023 to low 0 high 4" block
-place this block in the first "0" of the previous constrain block.
+Next we go to the "math" tab again and look for the "map 0 form low 0 high 1023 to low 0 high 4" block
+Place this block in the first "0" of the previous constrain block.
 Next change the numbers to match the following.
-"from low -1023 high 1023 to low 0 high 255 between 0 and 255"
-
+"from low -1023 high 1023 to low 0 high 255 between 0 and 255" and do the same for the blue block.
 ```block
 basic.forever(function () {
     blue = Math.constrain(Math.map(0, -1023, 1023, 0, 255), 0, 255)
@@ -81,10 +80,10 @@ basic.forever(function () {
 ## step 8
 Go to the "neopixal" tab and get the "strip show clolur" block
 Place it under the "set red" block in the forever loop.
-Next go to the "neopixal" "more" tab and look for the "red 0 green 0 blue 0" block.
+Next go to the "neopixal" "more" tab and look for the "red 255 green 255 blue 255" block.
 Place this in the "red" section of the "show clolur" block.
 Then go to the "variable" tab and replace the "0" after red with the "red" variable.
-and do the same for the blue. blue "0" to "blue" variable.
+and do the same for the blue. blue "0" to "blue" variable. Set the green value to "0"
 
 
 ```block
